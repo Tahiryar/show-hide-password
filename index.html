@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide / Show Password</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<body>
+    <div class="input_password">
+        <input type="password" id="password" placeholder="Enter your Password">
+        <box-icon class="eye-icon" id="eye" name='hide' onclick="togglePassword()"></box-icon>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const eyeIcon = document.getElementById("eye");
+            
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.setAttribute('name', 'show');
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.setAttribute('name', 'hide');
+            }
+        }
+    </script>
+</body>
+</html>

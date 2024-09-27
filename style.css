@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1592b; /* Orange background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.input_password {
+    background-color: white; /* White background for input area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width */
+    position: relative; /* For positioning the eye icon */
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Larger font for readability */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+input:focus {
+    border-color: #f1592b; /* Change border color on focus */
+}
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc; /* Default color for the eye icon */
+    transition: color 0.3s; /* Smooth color transition */
+}
+.eye-icon:hover {
+    color: #f1592b; /* Change color on hover */
+}
