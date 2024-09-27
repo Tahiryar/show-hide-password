@@ -1,0 +1,27 @@
+# WhatsApp Chat Application
+
+This is a simple chat application built using Node.js, Express, and MongoDB. The application allows users to create, view, and edit chat messages.
+
+## Features
+
+- **Create a new chat**: Users can send messages to other users.
+- **View all chats**: Displays a list of all chats in the database.
+- **Edit messages**: Users can edit their messages.
+- **Responsive design**: The application has a responsive design for better user experience.
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- EJS (Embedded JavaScript templating)
+- Boxicons for icons
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/whatsapp-chat-app.git
+   cd whatsapp-chat-app
